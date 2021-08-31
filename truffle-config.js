@@ -22,8 +22,7 @@
 
  // const infuraKey = "fj4jll3k.....";
  //
- const mnemonic = "general initial steel spirit inmate rack fiber equal soldier dash galaxy spring";
- const BSCSCANAPIKEY = "D3VSUJ2YUA5F6K4Y1EE2MFDPBJBTQJPD4A";
+ const {mnemonic, BSCSCANAPIKEY}  = require('./env.json');
  
  module.exports = {
    /**
@@ -45,6 +44,7 @@
 
      testnet: {
          provider: () => new HDWalletProvider(mnemonic, `https://data-seed-prebsc-1-s1.binance.org:8545/`),
+         
          network_id: 97,   // This network is yours, in the cloud.
          timeoutBlocks: 200,
          confirmations: 5,
@@ -58,7 +58,7 @@
    },
  
    // Configure your compilers
-   compilers: {
+   compilers:   {
      solc: {
         version: "0.5.16",    // Fetch exact version from solc-bin (default: truffle's version)
        // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
@@ -67,7 +67,7 @@
           enabled: false,
           runs: 200
         },
-        evmVersion: "byzantium"
+        evmVersion: "pertusberg"
        }
      },
    },

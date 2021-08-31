@@ -1,17 +1,38 @@
 {
   "name": "instacoin",
   "version": "1.0.0",
-  "description": "",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx oz compile"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@truffle/hdwallet-provider": "^1.4.3"
-  }
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^2.3.0",
+    "@openzeppelin/contracts-ethereum-package": "^2.5.0",
+    "@truffle/hdwallet-provider": "^1.4.3",
+    "truffle-flattener": "^1.5.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.4",
+    "@openzeppelin/test-helpers": "^0.5.5",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "truffle-plugin-verify": "^0.5.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjayamarwal/verifycontractBSC.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/sanjayamarwal/verifycontractBSC/issues"
+  },
+  "homepage": "https://github.com/sanjayamarwal/verifycontractBSC#readme",
+  "description": ""
 }

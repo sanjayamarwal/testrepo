@@ -1,0 +1,14 @@
+{
+  "contracts": {},
+  "solidityLibs": {},
+  "proxies": {
+    "instacoin/Instance": [
+      {
+        "address": "0xd8c71B7fC1D634Fdba5EBf4F78Efea861a16733B",
+        "kind": "NonProxy",
+        "bytecodeHash": "3d24b2765e00826e81d0bc1aa5b12ff5bde1605492a1dc72df6abec50ac28c40"
+      }
+    ]
+  },
+  "manifestVersion": "2.2"
+}
